@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="JvK-hh-ZaX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimonSays" translatesAutoresizingMaskIntoConstraints="NO" id="0n2-JF-xGk">
+                                <rect key="frame" x="16" y="20" width="343" height="221"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO9-hu-YL9">
+                                <rect key="frame" x="16" y="249" width="164" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="chV-G3-9jO"/>
+                                    <constraint firstAttribute="height" constant="108" id="iSe-ow-rxO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJT-Lc-sxe">
+                                <rect key="frame" x="195" y="249" width="164" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="xxc-Vl-wis"/>
+                                    <constraint firstAttribute="height" constant="108" id="zIO-l2-IdQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNb-AR-3hn">
+                                <rect key="frame" x="16" y="594" width="343" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="HE5-L9-9t3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6H-c5-bcc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simon Says " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uob-wa-18g">
+                                <rect key="frame" x="16" y="365" width="343" height="221"/>
+                                <color key="backgroundColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="0.3064533390410959" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GNb-AR-3hn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CSR-XM-Vqn"/>
+                            <constraint firstItem="LJT-Lc-sxe" firstAttribute="width" secondItem="QO9-hu-YL9" secondAttribute="width" id="DvT-t6-EHb"/>
+                            <constraint firstItem="uob-wa-18g" firstAttribute="width" secondItem="0n2-JF-xGk" secondAttribute="width" id="ECl-Qa-fdo"/>
+                            <constraint firstItem="LJT-Lc-sxe" firstAttribute="leading" secondItem="QO9-hu-YL9" secondAttribute="trailing" constant="15" id="Ele-Nt-eTk"/>
+                            <constraint firstItem="LJT-Lc-sxe" firstAttribute="top" secondItem="0n2-JF-xGk" secondAttribute="bottom" constant="8" id="FhI-br-sxO"/>
+                            <constraint firstItem="uob-wa-18g" firstAttribute="top" secondItem="QO9-hu-YL9" secondAttribute="bottom" constant="8" id="HHS-42-gjq"/>
+                            <constraint firstItem="0n2-JF-xGk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HdH-Ee-zHG"/>
+                            <constraint firstItem="LJT-Lc-sxe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IG1-q6-VaJ"/>
+                            <constraint firstItem="uob-wa-18g" firstAttribute="height" secondItem="0n2-JF-xGk" secondAttribute="height" id="Oh3-F3-LzZ"/>
+                            <constraint firstItem="GNb-AR-3hn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PB4-1L-QTo"/>
+                            <constraint firstItem="0n2-JF-xGk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WAk-ze-s7a"/>
+                            <constraint firstItem="GNb-AR-3hn" firstAttribute="top" secondItem="uob-wa-18g" secondAttribute="bottom" constant="8" id="Xgl-jj-1y4"/>
+                            <constraint firstItem="uob-wa-18g" firstAttribute="top" secondItem="LJT-Lc-sxe" secondAttribute="bottom" constant="8" id="bYH-cv-e4m"/>
+                            <constraint firstItem="0n2-JF-xGk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kX8-fR-JkD"/>
+                            <constraint firstItem="QO9-hu-YL9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lAO-BX-onD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uob-wa-18g" secondAttribute="trailing" id="ms1-fG-2t6"/>
+                            <constraint firstItem="QO9-hu-YL9" firstAttribute="top" secondItem="0n2-JF-xGk" secondAttribute="bottom" constant="8" id="p3o-31-noD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GNb-AR-3hn" secondAttribute="bottom" constant="8" id="yBQ-4b-DYd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="uob-wa-18g" id="CxG-Ur-G0r"/>
+                        <outlet property="scorelabel" destination="LJT-Lc-sxe" id="fh0-nw-6Fj"/>
+                        <outlet property="startbutton" destination="GNb-AR-3hn" id="nTq-VX-GuJ"/>
+                        <outlet property="timelabel" destination="QO9-hu-YL9" id="KFV-pL-UYf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1920" height="1200"/>
+        <image name="SimonSays" width="1000" height="707"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Road" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-SG-4EZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="TrafficLight" translatesAutoresizingMaskIntoConstraints="NO" id="TTH-Jo-5mg">
+                                <rect key="frame" x="16" y="28" width="343" height="282"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yk-qN-mRh">
+                                <rect key="frame" x="16" y="318" width="343" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhY-L6-9qg">
+                                <rect key="frame" x="77" y="388" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rhY-L6-9qg" secondAttribute="height" multiplier="1:1" id="0g9-jD-yRx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Start" backgroundImage="redButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startstop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Al-Qw-L3r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sbm-SG-4EZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="02n-4i-zKS"/>
+                            <constraint firstAttribute="trailing" secondItem="sbm-SG-4EZ" secondAttribute="trailing" id="5tV-mX-2E8"/>
+                            <constraint firstItem="rhY-L6-9qg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="Qyk-8K-zlE"/>
+                            <constraint firstItem="5Yk-qN-mRh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="R0t-GA-ODo"/>
+                            <constraint firstItem="5Yk-qN-mRh" firstAttribute="top" secondItem="TTH-Jo-5mg" secondAttribute="bottom" constant="8" id="RQz-a3-7zC"/>
+                            <constraint firstItem="TTH-Jo-5mg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UO3-YS-URe"/>
+                            <constraint firstItem="TTH-Jo-5mg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VGt-S9-UbV"/>
+                            <constraint firstItem="sbm-SG-4EZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VqX-Eb-CYu"/>
+                            <constraint firstItem="5Yk-qN-mRh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dIv-WX-Hho"/>
+                            <constraint firstItem="TTH-Jo-5mg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="e9A-Xs-kK4"/>
+                            <constraint firstItem="TTH-Jo-5mg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ejg-He-dfm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rhY-L6-9qg" secondAttribute="trailing" constant="62" id="i9c-FN-j2y"/>
+                            <constraint firstItem="rhY-L6-9qg" firstAttribute="top" secondItem="5Yk-qN-mRh" secondAttribute="bottom" constant="8" id="l3d-3m-sk2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sbm-SG-4EZ" secondAttribute="bottom" id="sqH-1Y-h3F"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rhY-L6-9qg" secondAttribute="bottom" constant="59" id="zG9-OI-95D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scorelabel" destination="5Yk-qN-mRh" id="soe-pv-1ZY"/>
+                        <outlet property="startstopbtn" destination="rhY-L6-9qg" id="yry-uS-jWf"/>
+                        <outlet property="trafficlight" destination="TTH-Jo-5mg" id="5Q2-5k-e0i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Road" width="1674" height="1902"/>
+        <image name="TrafficLight" width="550" height="900"/>
+        <image name="redButton" width="1353" height="1353"/>
+    </resources>
+</document>

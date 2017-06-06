@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kWX-Q6-TI4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fact Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="PQk-n9-roC">
+                                <rect key="frame" x="16" y="20" width="343" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="AGT-kQ-3M8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywG-sd-YoC">
+                                <rect key="frame" x="47" y="439.5" width="280" height="207.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ywG-sd-YoC" secondAttribute="height" multiplier="280:207" id="ZRS-lk-oC9"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Brain"/>
+                                <connections>
+                                    <action selector="randomfact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5u-hh-ZJ6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-3k-V9F">
+                                <rect key="frame" x="16" y="103" width="334" height="328.5"/>
+                                <color key="backgroundColor" white="1" alpha="0.65566138698630139" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQk-n9-roC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0MY-Uz-hP3"/>
+                            <constraint firstItem="ywG-sd-YoC" firstAttribute="top" secondItem="4i3-3k-V9F" secondAttribute="bottom" constant="8" id="1k1-CG-pag"/>
+                            <constraint firstItem="kWX-Q6-TI4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2Kz-gk-fRy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kWX-Q6-TI4" secondAttribute="bottom" id="4ea-HE-tVs"/>
+                            <constraint firstItem="PQk-n9-roC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5yn-lB-BuY"/>
+                            <constraint firstItem="4i3-3k-V9F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7dQ-Y8-P9f"/>
+                            <constraint firstItem="PQk-n9-roC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BdW-me-sao"/>
+                            <constraint firstItem="PQk-n9-roC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="E4k-nf-0lB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ywG-sd-YoC" secondAttribute="trailing" constant="32" id="FQm-PA-jRi"/>
+                            <constraint firstAttribute="trailing" secondItem="kWX-Q6-TI4" secondAttribute="trailing" id="Fso-gK-pUI"/>
+                            <constraint firstItem="PQk-n9-roC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HRF-hi-9Wh"/>
+                            <constraint firstItem="4i3-3k-V9F" firstAttribute="top" secondItem="PQk-n9-roC" secondAttribute="bottom" constant="8" id="Lg9-bf-cST"/>
+                            <constraint firstItem="4i3-3k-V9F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Woo-Tv-QcU"/>
+                            <constraint firstItem="ywG-sd-YoC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="YoN-hS-rLF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ywG-sd-YoC" secondAttribute="bottom" constant="20" id="bgF-0O-D83"/>
+                            <constraint firstItem="ywG-sd-YoC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="iQp-hG-NIU"/>
+                            <constraint firstItem="ywG-sd-YoC" firstAttribute="top" secondItem="4i3-3k-V9F" secondAttribute="bottom" constant="8" id="jkw-fB-Sgl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4i3-3k-V9F" secondAttribute="trailing" constant="9" id="oLt-io-KZ7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4i3-3k-V9F" secondAttribute="trailing" constant="9" id="qTs-Bf-lAJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ywG-sd-YoC" secondAttribute="bottom" constant="20" id="r5e-kA-8oc"/>
+                            <constraint firstItem="PQk-n9-roC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sLf-85-6Hd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ywG-sd-YoC" secondAttribute="trailing" constant="32" id="sNa-RL-3Vh"/>
+                            <constraint firstItem="kWX-Q6-TI4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tA0-qw-cNk"/>
+                            <constraint firstItem="4i3-3k-V9F" firstAttribute="top" secondItem="PQk-n9-roC" secondAttribute="bottom" constant="8" id="z22-4X-ymL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="4i3-3k-V9F" id="dlH-Zn-2A7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Brain" width="460" height="340"/>
+        <image name="background" width="1920" height="1080"/>
+    </resources>
+</document>
